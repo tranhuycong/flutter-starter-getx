@@ -18,15 +18,16 @@ class AppThemes {
   static Color get lightTextDisabledColor => _lightTextDisabledColor;
 
   static const TextTheme _lightTextTheme = TextTheme(
-    headline1: TextStyle(fontSize: 20.0, color: _lightTextColor, fontWeight: FontWeight.w900),
+    headline1: TextStyle(fontSize: 32.0, color: _lightTextColor, fontWeight: FontWeight.w900),
     bodyText1: TextStyle(fontSize: 16.0, color: _lightTextColor, fontWeight: FontWeight.w700),
     bodyText2: TextStyle(fontSize: 16.0, color: _bodyTextColor, fontWeight: FontWeight.w700),
     button: TextStyle(fontSize: 16.0, color: _buttonTextColor, fontWeight: FontWeight.w600),
     headline6: TextStyle(fontSize: 16.0, color: _lightTextColor),
-    subtitle1: TextStyle(fontSize: 20.0, color: _inputTextColor, fontWeight: FontWeight.w900),
+    subtitle1: TextStyle(fontSize: 14.0, color: _inputTextColor),
   );
 
   static final ThemeData lightTheme = ThemeData(
     primaryColor: _primaryColor,
+    textTheme: _lightTextTheme,
   );
 }

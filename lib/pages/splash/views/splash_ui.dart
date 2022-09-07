@@ -13,7 +13,10 @@ class SplashUI extends StatelessWidget {
         builder: (splashController) {
           return Scaffold(
             body: Center(
-              child: Text("splash.title".tr),
+              child: Text(
+                "splash.title".tr,
+                style: Theme.of(context).textTheme.headline1,
+              ),
             ),
           );
         });

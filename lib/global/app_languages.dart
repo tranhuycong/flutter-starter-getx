@@ -11,7 +11,7 @@ class MenuOptionsModel {
 class AppLanguages {
   static const String defaultLanguage = 'vi';
 
-  static final List<MenuOptionsModel> languageOption = [
+  static final List<MenuOptionsModel> languageOptions = [
     MenuOptionsModel(key: "en", value: "English"), //English
     MenuOptionsModel(key: "vi", value: "Vietnamese"), //Vietnamese
   ];

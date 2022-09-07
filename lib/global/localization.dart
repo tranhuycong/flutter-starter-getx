@@ -17,6 +17,8 @@ class Localization extends Translations {
 
           // Home page
           "home.title": "Home Page",
+          "home.button.signOut": "Sign Out",
+          "home.settings.language": "Language",
         },
         "vi": {
           // Splash Page
@@ -29,6 +31,8 @@ class Localization extends Translations {
           "auth.signIn.passwordHint": "Nhập mật khẩu",
           "auth.signInButton": "Đăng nhập",
           "commons.nextButton": "Tiếp",
+          "home.button.signOut": "Đăng xuất",
+          "home.settings.language": "Ngôn ngữ",
 
           // Home page
           "home.title": "Trang chủ",

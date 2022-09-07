@@ -1,4 +1,3 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -7,16 +6,17 @@ import 'global/app_themes.dart';
 import 'global/constants.dart';
 import 'global/localization.dart';
 import 'pages/app_config/controllers/language_controller.dart';
+import 'pages/auth/controllers/auth_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
+
+  // put global controller first
+  Get.put<AuthController>(AuthController());
   Get.put<LanguageController>(LanguageController());
-  runApp(DevicePreview(
-    // enabled: !kReleaseMode,
-    enabled: false,
-    builder: (context) => MyApp(),
-  ));
+
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

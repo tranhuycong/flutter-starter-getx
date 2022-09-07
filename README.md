@@ -1,4 +1,4 @@
-# flutter_flip_game
+# flutter_starter_getx
 
 A new Flutter project.
 

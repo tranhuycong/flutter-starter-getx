@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lala_kids/global/app_themes.dart';
+import 'package:flutter_starter_getx/global/app_themes.dart';
 
 enum ButtonType {
   normal,

@@ -1,6 +1,6 @@
 // ignore_for_file: non_constant_identifier_names, prefer_const_constructors
-import 'package:flutter_lala_kids/global/export_controllers.dart';
-import 'package:flutter_lala_kids/global/export_views.dart';
+import 'package:flutter_starter_getx/global/export_controllers.dart';
+import 'package:flutter_starter_getx/global/export_views.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 

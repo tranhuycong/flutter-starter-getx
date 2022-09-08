@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter_lala_kids/network_module/http_client.dart';
+import 'package:flutter_starter_getx/network_module/http_client.dart';
 
 import '../models/user_model.dart';
 

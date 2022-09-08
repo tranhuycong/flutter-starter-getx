@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lala_kids/commons/common_button.dart';
-import 'package:flutter_lala_kids/commons/dropdown_picker.dart';
-import 'package:flutter_lala_kids/global/app_languages.dart';
-import 'package:flutter_lala_kids/pages/app_config/controllers/language_controller.dart';
-import 'package:flutter_lala_kids/pages/auth/controllers/auth_controller.dart';
+import 'package:flutter_starter_getx/commons/common_button.dart';
+import 'package:flutter_starter_getx/commons/dropdown_picker.dart';
+import 'package:flutter_starter_getx/global/app_languages.dart';
+import 'package:flutter_starter_getx/pages/app_config/controllers/language_controller.dart';
+import 'package:flutter_starter_getx/pages/auth/controllers/auth_controller.dart';
 import 'package:get/get.dart';
 
 class HomeUI extends StatelessWidget {

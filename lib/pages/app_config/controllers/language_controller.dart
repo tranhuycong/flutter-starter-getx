@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lala_kids/global/app_languages.dart';
+import 'package:flutter_starter_getx/global/app_languages.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'dart:ui' as ui;

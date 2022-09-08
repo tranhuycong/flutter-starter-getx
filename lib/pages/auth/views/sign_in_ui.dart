@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lala_kids/commons/common_button.dart';
-import 'package:flutter_lala_kids/pages/auth/controllers/auth_controller.dart';
+import 'package:flutter_starter_getx/commons/common_button.dart';
+import 'package:flutter_starter_getx/pages/auth/controllers/auth_controller.dart';
 import 'package:get/get.dart';
 
 class SignInUI extends StatelessWidget {

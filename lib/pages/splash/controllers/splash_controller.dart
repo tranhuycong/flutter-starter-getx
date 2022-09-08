@@ -1,6 +1,6 @@
-import 'package:flutter_lala_kids/global/app_routes.dart';
-import 'package:flutter_lala_kids/global/app_store.dart';
-import 'package:flutter_lala_kids/pages/auth/controllers/auth_controller.dart';
+import 'package:flutter_starter_getx/global/app_routes.dart';
+import 'package:flutter_starter_getx/global/app_store.dart';
+import 'package:flutter_starter_getx/pages/auth/controllers/auth_controller.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 

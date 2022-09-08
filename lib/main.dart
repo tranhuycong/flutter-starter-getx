@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
 import 'global/app_themes.dart';
 import 'global/constants.dart';
+import 'global/environment.dart';
 import 'global/localization.dart';
 import 'pages/app_config/controllers/language_controller.dart';
 import 'pages/auth/controllers/auth_controller.dart';
 
 void main() async {
+  await dotenv.load(fileName: Environment.fileName);
+
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
 

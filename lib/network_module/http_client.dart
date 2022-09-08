@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:http/http.dart' as http;
 
-import 'api_base.dart';
+import '../global/environment.dart';
 import 'api_exceptions.dart';
 
 class HttpClient {
@@ -16,7 +16,7 @@ class HttpClient {
   Future<dynamic> fetchData(String url, {Map<String, String>? params}) async {
     dynamic responseJson;
 
-    String uri = APIBase.baseURL + url + ((params != null) ? queryParameters(params) : "");
+    String uri = Environment.apiUrl + url + ((params != null) ? queryParameters(params) : "");
     Map<String, String> header = {HttpHeaders.contentTypeHeader: 'application/json'};
     try {
       final response = await http.get(Uri.parse(uri), headers: header);
@@ -36,7 +36,7 @@ class HttpClient {
     dynamic responseJson;
     Map<String, String> header = {HttpHeaders.contentTypeHeader: 'application/json'};
     try {
-      final response = await http.post(Uri.parse(APIBase.baseURL + url), body: body, headers: header);
+      final response = await http.post(Uri.parse(Environment.apiUrl + url), body: body, headers: header);
       responseJson = _returnResponse(response);
     } on SocketException {
       throw FetchDataException('No Internet connection');

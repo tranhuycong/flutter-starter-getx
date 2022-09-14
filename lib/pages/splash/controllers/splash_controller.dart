@@ -20,9 +20,9 @@ class SplashController extends GetxController {
   checkUserLogin() async {
     if (store.read(AppStore.isSignIn) == 'true') {
       await authController.getUserInfo();
-      Get.toNamed(AppRoutes.HomePage);
+      Get.offAllNamed(AppRoutes.HomePage);
     } else {
-      Get.toNamed(AppRoutes.LoginPage);
+      Get.offAllNamed(AppRoutes.LoginPage);
     }
   }
 }

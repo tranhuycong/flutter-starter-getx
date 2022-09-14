@@ -1,4 +1,4 @@
-package com.example.flutter_flip_game
+package com.example.flutter_starter_getx
 
 import io.flutter.embedding.android.FlutterActivity
 
